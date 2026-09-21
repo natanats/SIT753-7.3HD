@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>TECHZONE</title>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h2 class="logo mb-0">
+            TECHZONE
+        </h2>
+
+        <!-- DESKTOP MENU -->
+
+        <div class="d-none d-md-flex align-items-center gap-4">
+            <nav class="nav-links">
+                <a href="index.html">Store</a>
+                <a href="products.html">Products</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+
+            <form class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+
+        <!-- MOBILE MENU BUTTON -->
+
+        <button
+        class="btn btn-outline-light d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu">
+            Menu
+        </button>
+    </div>
+</header>
+
+<div class="container my-4">
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+    <button data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+    <button data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5>Welcome to TECHZONE</h5>
+        <p>Enjoy the world of TECH</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=1865&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5>World of gaming</h5>
+        <p>Explore more on gaming gears</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5>Explore on work enchaned</h5>
+        <p>There are more different style of items with discount!</p>
+      </div>
+    </div>
+
+    <div class="carousel-item" data-bs-interval="5000">
+      <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf" class="d-block w-100">
+    <div class="carousel-caption">
+        <h5>Looking for accessories</h5>
+        <p>YAOu have come to the right places!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+</div>
+
+<div class="container my-5">
+
+  <h2 class="text-center mb-4">OUR DESKTOP</h2>
+
+  <div class="row g-4">
+
+    <!-- GAMING -->
+    <div class="col-12 col-md-6">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1626218174358-7769486c4b79?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+        <div class="overlay">
+          <h3>GAMING PC</h3>
+          <p>High-performance desktops for gaming</p>
+          <a href="products.html#gaming" class="btn">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8">
+
+        <div class="overlay">
+          <h3>WORKING / MAC</h3>
+          <p>Devices for work and productivity</p>
+          <a href="products.html#working" class="btn">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<section class="airflow-section">
+
+    <h2>CHIP COMPARISON</h2>
+
+    <p class="airflow-text">
+        Gaming PCs typically use high-performance desktop CPUs such as Intel Core i9 or AMD Ryzen 9,
+        designed for maximum power, high clock speeds, and strong multi-core performance. These chips
+        excel in gaming, heavy multitasking, and demanding workloads but require more power and cooling.
+
+        In contrast, MacBook devices use Apple’s M-series chips (like M2 or M3), which are based on ARM architecture.
+        These chips focus on efficiency, delivering strong performance while consuming less power. They integrate CPU,
+        GPU, and memory into a single system, making them ideal for productivity, creative work, and long battery life.
+    </p>
+
+    <div class="airflow-box">
+
+        <div class="airflow-item">
+            <h3>GAMING PC CPU</h3>
+            <img src="https://plus.unsplash.com/premium_photo-1683121716061-3faddf4dc504?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <p style="color:#ccc; margin-top:10px;">
+                High power, better for gaming and heavy performance tasks.
+            </p>
+        </div>
+
+        <div class="airflow-item">
+            <h3>APPLE M-SERIES CHIP</h3>
+            <img src="https://www.macworld.com/wp-content/uploads/2024/05/Apple-M4-with-chip-stuff-4.jpg?quality=50&strip=all">
+            <p style="color:#ccc; margin-top:10px;">
+                Energy efficient, optimized for productivity and battery life.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="tech-footer">
+    <div class="footer-links">
+        <a href="index.html">Store</a>
+        <a href="products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 TECHZONE</p>
+    </div>
+</footer>
+
+<div class="offcanvas offcanvas-start bg-black text-white" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title logo">TECHZONE</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="d-flex flex-column gap-3">
+            <a href="index.html" class="text-white text-decoration-none">Store</a>
+            <a href="products.html" class="text-white text-decoration-none">Products</a>
+            <a href="news.html" class="text-white text-decoration-none">News</a>
+            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+            <a href="faq.html" class="text-white text-decoration-none">FAQ</a>
+            <a href="register.html" class="text-white text-decoration-none">Register</a>
+            <a href="login.html" class="text-white text-decoration-none">Login</a>
+            <a href="profile.html" class="text-white text-decoration-none">Profile</a>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

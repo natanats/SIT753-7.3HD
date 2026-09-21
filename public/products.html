@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - TechZone</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <h2 class="logo mb-0">TECHZONE</h2>
+
+        <div class="d-none d-md-flex align-items-center gap-4">
+            <nav class="nav-links">
+                <a href="index.html">Store</a>
+                <a href="products.html">Products</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+            <form class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Go</button>
+            </form>
+        </div>
+
+        <button class="btn btn-outline-light d-md-none" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">Menu</button>
+    </div>
+</header>
+
+
+<div class="container my-5">
+
+    <!-- Gaming PC -->
+    <section class="mb-5">
+        <h2 id="gaming" class="mb-4">Gaming PC</h2>
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-gp1">
+                    <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/desktops/alienware-desktops/alienware-aurora-r16/media-gallery/liquid/desktop-aw-r16-bk-lqd-cooling-gallery-2.psd?fmt=png-alpha&pscan=auto&scl=1&wid=2621&hei=3860&qlt=100,1&resMode=sharp2&size=2621,3860&chrss=full&imwidth=5000">
+                    <h5>ASUS ROG Gaming PC</h5>
+                    <p>$2499</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('gp1')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-gp2">
+                    <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7">
+                    <h5>Alienware Aurora</h5>
+                    <p>$2799</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('gp2')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-gp3">
+                    <img src="https://cdn.mwave.com.au/images/400/asus_rog_swift_pg32ucdm_315_240hz_4k_003ms_usbc_90w_qdoled_gaming_monitor_ac73634_32573.jpg">
+                    <h5>Gaming Monitor 240Hz</h5>
+                    <p>$599</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('gp3')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-gp4">
+                    <img src="https://images.unsplash.com/photo-1635987391914-cb84b567e68f">
+                    <h5>RGB Gaming Keyboard</h5>
+                    <p>$149</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('gp4')">+ Compare</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Working / Mac -->
+    <section class="mb-5">
+        <h2 id="working" class="mb-4">Working / Mac</h2>
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-mb1">
+                    <img src="https://images.unsplash.com/photo-1651241680016-cc9e407e7dc3?q=80&w=987">
+                    <h5>MacBook Air M2</h5>
+                    <p>$1499</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('mb1')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-mb2">
+                    <img src="https://images.unsplash.com/photo-1592919933511-ea9d487c85e4?q=80&w=1974">
+                    <h5>MacBook Pro</h5>
+                    <p>$2100</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('mb2')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-mb3">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=2070">
+                    <h5>iMac</h5>
+                    <p>$1800</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('mb3')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-mb4">
+                    <img src="https://images.unsplash.com/photo-1608377205700-249f4b48b180?q=80&w=2070">
+                    <h5>Magic Keyboard</h5>
+                    <p>$39</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('mb4')">+ Compare</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Accessories -->
+    <section class="mb-5 accessories-section">
+        <h2 class="mb-4">Accessories</h2>
+        <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-ac1">
+                    <img src="https://plus.unsplash.com/premium_photo-1761043248662-42f371ad31b4?q=80&w=2070">
+                    <h5>Ugreen C Hub</h5>
+                    <p>$25.99</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('ac1')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-ac2">
+                    <img src="https://images.unsplash.com/photo-1572721546624-05bf65ad7679?q=80&w=1973">
+                    <h5>UGREEN Cable</h5>
+                    <p>$10.49</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('ac2')">+ Compare</button>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="rog-card" id="card-ac3">
+                    <img src="https://plus.unsplash.com/premium_photo-1760531797911-f7b07b9572f1?q=80&w=2066">
+                    <h5>Docking Station</h5>
+                    <p>$64.99</p>
+                    <button class="btn btn-dark">Shop Now</button>
+                    <button class="btn-compare" onclick="toggleCompare('ac3')">+ Compare</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Comparison Result Section -->
+    <section id="comparison-section">
+        <h3>
+            <span id="cmp-name-a">A</span>
+            <span class="vs-label">VS</span>
+            <span id="cmp-name-b">B</span>
+        </h3>
+
+        <table id="cmp-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th class="col-a" id="th-a">Product A</th>
+                    <th class="col-b" id="th-b">Product B</th>
+                </tr>
+            </thead>
+            <tbody id="cmp-body"></tbody>
+        </table>
+
+        <div class="insight-grid">
+            <div class="insight-card" id="insight-a">
+                <h5 class="a" id="insight-title-a">Product A</h5>
+            </div>
+            <div class="insight-card" id="insight-b">
+                <h5 class="b" id="insight-title-b">Product B</h5>
+            </div>
+        </div>
+
+        <div class="summary-grid" id="summary-grid"></div>
+
+        <button id="close-comparison" onclick="closeComparison()">✕ Close Comparison</button>
+    </section>
+
+</div>
+
+<div class="tray-spacer"></div>
+
+
+<!-- Compare Tray -->
+<div id="compare-tray">
+    <div class="tray-slots">
+        <div class="tray-slot" id="slot-a">
+            <span id="slot-a-name">Slot A — empty</span>
+            <button class="remove-x" id="remove-a" style="display:none" onclick="removeFromTray(0)">✕</button>
+        </div>
+        <div class="tray-slot" id="slot-b">
+            <span id="slot-b-name">Slot B — empty</span>
+            <button class="remove-x" id="remove-b" style="display:none" onclick="removeFromTray(1)">✕</button>
+        </div>
+    </div>
+    <span id="tray-info">0 / 2 selected</span>
+    <button id="compare-now-btn" disabled onclick="runComparison()">Compare Now →</button>
+</div>
+
+
+<footer class="tech-footer">
+    <div class="footer-links">
+        <a href="index.html">Store</a>
+        <a href="products.html">Products</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="profile.html">Profile</a>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 TECHZONE</p>
+    </div>
+</footer>
+
+<div class="offcanvas offcanvas-start bg-black text-white" id="mobileMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title logo">TECHZONE</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <nav class="d-flex flex-column gap-3">
+            <a href="index.html" class="text-white text-decoration-none">Store</a>
+            <a href="products.html" class="text-white text-decoration-none">Products</a>
+            <a href="news.html" class="text-white text-decoration-none">News</a>
+            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+            <a href="faq.html" class="text-white text-decoration-none">FAQ</a>
+            <a href="register.html" class="text-white text-decoration-none">Register</a>
+            <a href="login.html" class="text-white text-decoration-none">Login</a>
+            <a href="profile.html" class="text-white text-decoration-none">Profile</a>
+        </nav>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="compare.js"></script>
+
+</body>
+</html>
