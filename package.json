@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "test": "node --test"
+    "test": "c8 --reporter=lcov node --test"
   },
   "keywords": [
     "express",
@@ -21,5 +21,8 @@
     "express-session": "^1.19.0",
     "morgan": "^1.10.1",
     "newrelic": "^14.5.0"
+  },
+  "devDependencies": {
+    "c8": "^12.0.0"
   }
 }
